@@ -1,0 +1,40 @@
+{
+    "links": [
+        {
+            "name": "GitHub",
+            "path": "https://github.com/",
+            "comment": "GitHub is the best place to share code"
+        },
+        {
+            "name": "CDNJS",
+            "path": "http://cdnjs.com/",
+            "comment": "Host of all libraries"
+        },
+        {
+            "name": "W3Schools",
+            "path": "http://www.w3schools.com/",
+            "comment": "Online web tutorial"
+        },
+        {
+            "name": "SitePoint",
+            "path": "http://www.sitepoint.com/",
+            "comment": "Learn CSS/HTML5/Javascript"
+        },
+        {
+            "name": "JSONLint",
+            "path": "http://www.jsonlint.com/",
+            "comment": "The JSON validator"
+        },
+        {
+            "name": "ColorZilla",
+            "path": "http://www.colorzilla.com/",
+            "comment": "Advanced Colorful Goodies"
+        },
+        {
+            "name": "Developer Network",
+            "path": "https://developer.mozilla.org/en-US/",
+            "comment": "Mozilla developer network"
+        }
+    ]
+}
+

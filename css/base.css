@@ -1,0 +1,284 @@
+
+html, body { height:100% }
+
+* {
+
+	font-family	: Arial,sans-serif; 
+}
+.container {
+	width			: 1000px;
+	margin			: 0 auto;
+	-webkit-box-shadow: #444 0px 0px 20px;
+	-moz-box-shadow	: #444 0px 0px 20px;
+	box-shadow		: #444 0px 0px 20px;
+	height			: 100%;
+}
+
+header, footer {
+	width		: 100%;
+	filter		: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64', endColorstr='#1B1B1C');
+	background 	: -webkit-linear-gradient(top, #595C64, #1B1B1C);
+	background 	: -moz-linear-gradient(top, #595C64, #1B1B1C);
+	background 	: -o-linear-gradient(top, #595C64, #1B1B1C);
+	background 	: -ms-linear-gradient(top, #595C64, #1B1B1C);
+	color		: #FFF; 
+}
+header { 
+	top		: 0;
+}
+footer {
+	bottom		: 0;
+	margin-top	: -40px;
+	height		: 40px;
+	width		: 1000px;
+	font-size	: .7em; 
+	position 	: fixed;
+	bottom 		: 0;
+}
+
+body input[type='text'] {
+	-moz-border-radius 		: 5px;
+	-webkit-border-radius 	: 5px;
+	-o-border-radius		: 5px;
+	-ms-border-radius		: 5px;
+	-khtml-border-radius	: 5px;
+	border-radius			: 5px;
+	-moz-box-shadow			: 0 0 10px -2px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow		: 0 0 10px -2px rgba(0, 0, 0, 0.6);
+	-o-box-shadow			: 0 0 10px -2px rgba(0, 0, 0, 0.6);
+	box-shadow				: 0 0 10px -2px rgba(0, 0, 0, 0.6);
+	color					: #999;
+	background-color 		: #f0f0f0;
+	font-size				: 1em;
+	font-family				: Helvetica, sans-serif;
+	padding 				: 2px;
+	border 					: 1px solid #bbbbbb;
+	font-weight 			: 500;
+}
+
+.wlcdesc {
+	font-size: .7em;
+}
+
+header h3, footer p {
+	text-align	: center;
+	margin		: 0;
+	padding-top	: 10px;
+}
+
+.bodycontainer {
+	text-align	: center;
+}
+
+.innercontent {
+	width		: 500px;
+	height		: 40%;
+	margin		: auto;
+	overflow	: auto;
+	position 	: relative;
+	margin-top	: 20px;
+}
+
+
+#personName {width: 60%;margin:3px;}
+#resetCounter, article a {
+	color: #5b73a3;
+	text-decoration:none;
+}
+
+#menu {
+	height					: 36px;
+	width					: 80%;
+	margin					: 4px auto;
+	background-color		: #000;
+	-webkit-border-radius	: 3px;
+	-moz-border-radius		: 3px;
+	border-radius			: 3px;
+	text-align 				: center;
+	filter		: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64', endColorstr='#1B1B1C');
+	background 	: -webkit-linear-gradient(top, #595C64, #1B1B1C);
+	background 	: -moz-linear-gradient(top, #595C64, #1B1B1C);
+	background 	: -o-linear-gradient(top, #595C64, #1B1B1C);
+	background 	: -ms-linear-gradient(top, #595C64, #1B1B1C);
+}
+}
+nav ul {
+	list-style	: none;
+	margin		: 0;
+	padding		: 0;
+	width		: 100%;
+	text-align	: center;
+}
+
+li {
+	display		: inline-block;
+	position	: relative;
+	width		: 200px;
+}
+
+nav ul li:hover ul {
+	visibility	: visible;
+}
+
+nav > ul > li:hover {
+	background: -webkit-linear-gradient(top, #696c72, #333334);
+	background: -moz-linear-gradient(top, #696c72, #333334);
+	background: -o-linear-gradient(top, #696c72, #333334);
+	background: -ms-linear-gradient(top, #696c72, #333334);
+	filter	  : progid:DXImageTransform.Microsoft.gradient(startColorstr='#696c72', endColorstr='#333334');
+	background-color:#696c72;
+	color: #FFF;
+}
+
+nav ul li ul {
+	background-color: #696c72;
+	position	: absolute;
+	left		: 0;
+	top		: 36px;
+	width		: 100%;
+	visibility	: hidden;
+	background: -webkit-linear-gradient(top, #696c72, #333);
+	background: -moz-linear-gradient(top, #696c72, #333334);
+	background: -o-linear-gradient(top, #696c72, #333334);
+	background: -ms-linear-gradient(top, #696c72, #333334);
+	filter	  : progid:DXImageTransform.Microsoft.gradient(startColorstr='#696c72', endColorstr='#333334');
+	color 	: #FFF;
+}
+
+nav ul li ul li {
+	display		: block;
+	width		: 100%;
+	padding		: 5px 0;
+}
+
+#menu li {
+	margin		: 0;
+	padding		: 0;
+	height		: 36px;
+	/*z-index		: 99;*/
+	list-style	: none;
+	position	: relative;
+	white-space	: nowrap;
+	font-weight	: normal;
+}
+
+#menu li a {
+	color		: #fff;
+	display		: block;
+	font-size	: 15px;
+	overflow	: hidden;
+	line-height	: 18px;
+	padding		: 8px 25px;
+	position	: relative;
+	letter-spacing	: 1px;
+	text-transform	: none;
+	text-decoration	: none;
+}
+
+#menu ul li ul li:hover {
+	background-color	: #999;
+}
+#menu ul li ul li:hover a {
+	color		: #000;
+}
+
+.clear {display: block;}
+.clear::after {
+	content		: " ";
+	display		: block;
+	clear		: both;
+	visibility	: hidden;
+	line-height	: 0;
+	height		: 0;
+	font-size	: 0;
+	width		: 0;
+}
+
+#projects {
+		margin-top	: 30px;
+}
+
+article {
+	display 	: inline-block;
+	padding 	: 20px;
+	width		: 300px;
+	background-color: #ccc;
+	height 		: 50px;
+	filter 		: progid:DXImageTransform.Microsoft.Shadow(color=#666666, strength=3, direction=135);
+	box-shadow 	: 0px 1px 5px #999;
+	margin-bottom : 5px;
+	-moz-box-shadow 	: 0px 1px 5px #999;
+	-webkit-box-shadow 	: 0px 1px 5px #999;
+	-moz-border-radius 	: 2px;
+	border-radius 		: 2px;
+	background 	: -webkit-gradient(linear, 100% 30%, 100% 100%, from(#FFFFFF), to(#CCCCCC));
+	background 	: -moz-linear-gradient(top, #FFFFFF 30%, #CCCCCC 100%);
+	background 	: -o-linear-gradient(top, #FFFFFF 30%, #CCCCCC 100%);
+	background 	: -ms-linear-gradient(top, #FFFFFF 30%, #CCCCCC 100%);
+	filter		: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CCCCCC');
+}
+
+.showCharts {
+	display 	: none;
+	width 		: 60%;
+	height 		: 350px;
+	margin 		: 15px auto;
+	padding 	: 5px;
+	display 	: none;
+	border 		: 1px solid #ccc;
+}
+
+.programs {
+	margin  : auto;
+	display : none;
+	position: absolute;
+	width	: 100%;
+	top		: 0;
+	z-index	: 150;
+}
+
+.progwrapper {
+	margin  : 10% auto auto auto;
+	width	: 60%;
+	background	: #ffffff;
+	padding 	: 20px;
+}
+
+.closewrapper {
+	float 	: right;
+	cursor 	: pointer;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media all and (max-width: 980px) {
+	#container, footer {
+		width: 94%;
+	}
+}
+
+@media all and (max-width: 800px) {
+	#menu {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 650px) {
+	#menu {
+		text-align	: left;
+	}
+	li {
+		width:120px;
+	}
+	.innercontent {
+		width:100%;
+	}
+}
+
+@media all and (max-width: 420px) {
+	#menu {
+		display	: none;
+	}
+}

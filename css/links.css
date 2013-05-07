@@ -1,0 +1,54 @@
+
+h4 {
+	text-decoration: underline;
+}
+
+.linkinput {
+	width: 98%;
+}
+
+.del {
+	float:right;
+}
+
+fieldset {
+	width:100%;
+}
+
+.showLinks {
+	width 			: 60%;
+	margin 			: 15px auto;
+	padding 		: 5px;
+	display 		: none;
+	border-left 	: 1px solid #ccc;
+	border-right	: 1px solid #ccc;
+	border-bottom	: 1px solid #ccc;
+	border-radius	: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	filter		: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CCCCCC');
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #CCCCCC 100%);
+	
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #CCCCCC 100%);
+	
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #CCCCCC 100%);
+	
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #CCCCCC));
+	
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #CCCCCC 100%);
+	
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #CCCCCC 100%);
+	
+	box-shadow: 10px 10px 5px #888;
+}
+
+.linkslist > li { 
+	width 		: 100%;
+	font-size 	: 80%; 
+}

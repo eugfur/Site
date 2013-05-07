@@ -1,0 +1,138 @@
+
+
+.chessboard
+{
+    height      : 400px;
+    width       : 400px;
+    border      : 1px solid #bbb;
+    margin      : 20px auto;
+    position    : relative;
+    display 	: none;
+}
+
+.spot
+{
+    height      : 50px;
+    width       : 50px;
+    background  : #fff;
+    float       : left;
+}
+
+.spot.dark
+{
+    background  : #bbb;
+}
+
+.spot > div
+{
+    height      : 50px;
+    width       : 50px;
+}
+
+.spot .wKING
+{
+    background: url('../images/wKing.png');
+}
+
+.spot .wQUEEN
+{
+    background: url('../images/wQueen.png');
+}
+
+.spot .wROOK
+{
+    background: url('../images/wRook.png');
+}
+
+.spot .wBISHOP
+{
+    background: url('../images/wBishop.png');
+}
+
+.spot .wKNIGHT
+{
+    background: url('../images/wKnight.png');
+}
+
+.spot .wPAWN
+{
+    background: url('../images/wPawn.png');
+}
+
+.spot .bKING
+{
+    background: url('../images/bKing.png');
+}
+
+.spot .bQUEEN
+{
+    background: url('../images/bQueen.png');
+}
+
+.spot .bROOK
+{
+    background: url('../images/bRook.png');
+}
+
+.spot .bBISHOP
+{
+    background: url('../images/bBishop.png');
+}
+
+.spot .bKNIGHT
+{
+    background: url('../images/bKnight.png');
+}
+
+.spot .bPAWN
+{
+    background: url('../images/bPawn.png');
+}
+
+.spot .e
+{
+    background: none;
+}
+
+.disableddiv {
+	top		: 0;
+	left		: 0;
+	background	: #000;
+	position	: absolute;
+	width		: 100%;
+	height		: 100%;
+	filter		: alpha(opacity=60);
+   	-moz-opacity	: 0.6;
+    	opacity		: 0.6;
+	z-index		: 100;
+}
+
+.newpeice {
+	background	: #fff;
+	z-index		: 150;
+	position	: absolute;
+	border		: 2px solid #000;
+	font-size	: 12px;
+	width		: 150px;
+	padding		: 5px;
+}
+
+dd {
+	text-align	: center;
+	padding-bottom	: 5px;
+}
+
+dd:hover {
+	background	: #ccc;
+	cursor		: pointer;
+}
+
+dt {
+	padding-bottom	: 10px;
+	font-weight	: bold;
+	text-align	: center;
+}
+.msg {
+	width 		: 100%;
+	text-align 	: center;
+}

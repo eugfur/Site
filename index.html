@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/chess.css">
+		<link rel="stylesheet" type="text/css" href="css/links.css">
+		<link rel="stylesheet" type="text/css" href="css/kendo.default.min.css">
+		<link rel="stylesheet" type="text/css" href="css/kendoyoutube.css">
+		<!--[if IE 9]><style type="text/css">.innercontent {margin-top: 100px;}</style><![endif]-->
+<!--[if !IE]>--><style type="text/css">#menu li {z-index:99;}</style><!--<![endif]-->
+		<title>Eugene Furman projects</title>
+
+	</head>
+	<body>
+		<div id="container" class="container">
+			<script src='scripts/jquery-1.9.1.js'></script>
+    		<script src='scripts/jquery-ui.js'></script>
+			<header>
+				<h3>Portfolio of Eugene Furman</h3>
+				<nav id="menu" class="menu clear">
+					<ul class="clear">
+						<li>
+							<a >My Templates</a>
+							<ul>
+								<!--<li>
+									<a href="http://eugenefurman.eu.pn/tmp/Chess/index.html">Chess</a>
+								</li>
+								<li>
+									<a href="http://eugenefurman.eu.pn/tmp/Links/links.html">Links</a>
+								</li>-->
+								<li>
+									<a href="http://eugenefurman.eu.pn/tmp/Responsive/resp.html">RWD Template</a>
+								</li>								
+							</ul>
+						</li>
+						<li>
+							<a >Search Providers</a>
+							<ul>
+								<li>
+									<a href="http://www.google.com">Google</a>
+								</li>
+								<li>
+									<a href="http://www.yahoo.com">Yahoo</a>
+								</li>
+								<li>
+									<a href="http://www.bing.com/">Bing</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a >Usefull Links</a>
+							<ul>
+								<li>
+									<a href="https://github.com/">GitHub</a>
+								</li>
+								<li>
+									<a href="http://www.w3schools.com/">W3 Schools</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<section id="bodycontainer" class="bodycontainer">
+				<div class="innercontent">
+					<h4>Type your name and press enter please</h4>
+					<form>
+						<input type="text" id="personName" placeholder="type your name and press enter please">
+						<div id="wlcdesc" class="wlcdesc">(user counter uses only core javascript)</div>
+					</form>
+					<ul id="welcomePlace"></ul>
+				</div>
+
+				<div id="projects">
+					<article id="showchess">
+						The project done using javascript and 
+						<br /> jQuery
+						<a href="#" id="chesslnk" class="art-center">Click here to see chess</a>
+					</article>
+					<article id="showlinks">
+						The project done using Backbone.js and 
+						<br />Bootstrap.css
+						<a href="#" id="linkslnk" class="art-center">Click here to see links</a>
+					</article>
+					<article id="showcharts">
+						The project done using Highcharts 
+						<br /> 
+						Click here to see <a href="#" id="barlnk" class="art-center">Bar</a> or <a href="#" id="pielnk" class="art-center">Pie</a>  charts
+					</article>
+					<article id="showkendo">
+						The project done using KendoUI.js  
+						<br /><a href="#" id="kendolnk" class="art-center">Click here to see Kendo YouTube</a>
+					</article>
+					<article id="showember">
+						The project done using Ember.js  
+						<br /><a href="#" id="emberlnk" class="art-center">Click here to see Ember YouTube</a>
+					</article>
+					<article id="new">
+						&nbsp;<br />&nbsp;
+					</article>
+				</div>
+			</section>
+			
+
+			<footer>
+				<p>
+					&copy; 2013 Eugene Furman.
+				</p>
+			</footer>
+		</div>
+		<section id="programs" class="programs">
+			<div id="progwrapper" class="progwrapper">
+				<img id="closewrapper" class="closewrapper" src="images/close.png" />
+				
+				<!-- Chess -->
+				<script src='scripts/chess.js'></script>
+				<div id='chessboard' class="chessboard progplace"></div>
+								
+				<!-- Links Backbone -->
+				<script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+				<script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.9.10/backbone-min.js"></script>
+				<script src='scripts/links.js'></script>
+				<div id="showLinks" class="showLinks progplace"></div>
+				    	<!-- Templates -->
+		    	<script type="text/template" id="index-template">
+			      <h4>There are <%= Count%> links</h4>
+			      <ul class='linkslist'></ul>
+			    </script>
+			    <script type="text/template" id="add-template">
+			      <legend>Add a link</legend>
+			      <fieldset>
+			          <label for='name'>Name</label>
+			          <input type='text' placeholder="Name of the link" id='name' class="linkinput">
+		
+			          <label for='url'>URL</label>
+			          <input type='text' placeholder="URL of the link" id='url' class="linkinput">
+			          
+			          <label for='name'>Comment</label>
+			          <input type='text' placeholder="Comment of the link" id='comment' class="linkinput">
+					  <div>
+			          	<a id="addbtn" class="btn btn-small pull-right toggle-all" href="#">Add Link</a>
+			          </div>
+			      </fieldset>
+			    </script>
+			    
+			    <!-- highcharts -->
+				<script src='scripts/highcharts.js'></script>
+				<script src='scripts/exporting.js'></script>
+				<script src='scripts/charts.js'></script>
+				<div id="showCharts" class="showCharts progplace"></div>
+			    
+			    <!-- YouTube KendoUI -->
+			    <script src='scripts/kendo.web.min.js'></script>
+				<script src='scripts/kendoyoutube.js'></script>
+			    <div id="youtubes-container" class="youtubes-container k-header k-menu-vertical progplace">
+	                <h3>YouTube feed</h3>
+	
+	                <div id="search-box" class="search-box">
+	                	<a href="#" id="mostvwdlnk" class="mostvwdlnk">most popular this week</a>
+	                    <label>Search for:
+	                        <input type="text" value="html5" id="searchfor" class="k-textbox searchfor" />
+	                    </label>
+	                    <button class="k-button" id="search">search</button>
+	                </div>
+	
+	                <div id="youtubes" class="youtubes">
+	                    <div>Loading ... </div>
+	                </div>
+	                <div style="font-size: .6em;margin-top:5px;">
+	                	*All tables with inline styles are coming from YouTube.
+	                </div>
+	            </div>
+
+	            <script id="template" type="text/x-kendo-template">
+	                <div class="youtube k-header">
+	                    #= content.$t #
+	                    <div class="metadata">
+	                        #= kendo.toString(new Date(Date.parse(published.$t)), "dd MMM HH:mm") #
+	                    </div>
+	                </div>
+	            </script>
+			    
+			    <!-- YouTube Ember.js -->
+			    <script src="scripts/handlebars-1.0.0-rc.3.js"></script>
+  				<script src="scripts/ember-1.0.0-rc.3.js"></script>
+  				<script src="scripts/ember_app.js"></script>
+  				<div id="ember-youtubes-container" class="youtubes-container progplace">
+  				</div>  
+  				<script type="text/x-handlebars">
+				  	
+				        <h3>Find videos for: 
+						{{view AppEmber.SearchTextField placeholder="YouTube Title" valueBinding="AppEmber.youtubeController.query"}}</h3>
+
+						<div class="youtubes">
+									{{#each AppEmber.youtubeController}}
+											<div id="youtube" class="youtube">
+											{{{ytitem}}}
+											 </div>
+									{{/each}}
+						</div>	
+				     
+				 </script>
+  			      
+		    </div>
+		</section>
+
+		<script>
+			///////////////////////core javascript implementation of a counter////////////////////////////////////
+
+			var visitors = (function() {
+				var counter = 0;
+				return {
+					incrementCounter : function() {
+						counter++;
+						return counter;
+					},
+					resetCounter : function() {
+						console.log("counter value prior to reset: " + counter);
+						counter = 0;
+					}
+				};
+			})();
+			
+			var addEvent = (function() {
+				if (document.addEventListener) {
+					return function(el, type, fn) {
+						el.addEventListener(type, fn, false);
+					};
+				} else {
+					return function(el, type, fn) {
+						el.attachEvent('on' + type, handler);
+					};
+				}
+			})();
+			
+			(function() {
+				String.prototype.trim = function() {
+					return this.replace(/^\s+|\s+$/g, '');
+				};
+				var doc = document;
+			
+				var welcomePlace = doc.getElementById('welcomePlace'), personName = doc.getElementById('personName'), form = personName.form, greeting = [], 
+				entities = {
+					'<' : '&lt;',
+					'>' : '&gt;',
+					'&' : '&amp;'
+				};
+			
+				addEvent(form, 'submit', function(event) {
+					event.preventDefault();
+			
+					var name = personName.value.trim();
+			
+					if (name == '') {
+						if (event.stopPropagation) {
+							event.stopPropagation();
+						} else {
+							event.cancelBubble = true;
+						}
+						personName.value = '';
+						welcomePlace.innerHTML = '';
+						return false;
+					} else {
+						var counter = visitors.incrementCounter();
+						//localStorage.counter = counter;
+			
+						greeting.push('<li class="you">Welcome ');
+						greeting.push(name.replace(/[<>&]/g, function(m) {
+							return entities[m];
+						}));
+						greeting.push('! You are the visitor #' + counter + ' today.</li>');
+						greeting.push('<a id="resetCounter">click here to reset counter.</a>');
+			
+						welcomePlace.innerHTML = greeting.join('');
+			
+						//reset values
+						greeting = []
+						personName.value = '';
+						$(".innercontent h4, .innercontent form").hide();
+			
+						setTimeout(resetCounterFn(), 300);
+					}
+				});
+			
+				function resetCounterFn() {
+					var resetCounter = doc.getElementById('resetCounter');
+					if (resetCounter) {
+						addEvent(resetCounter, 'click', function(event) {
+							visitors.resetCounter();
+							//localStorage.removeItem('counter');
+							welcomePlace.innerHTML = '';
+							$(".innercontent h4, .innercontent form").show();
+						})
+					}
+				}
+			
+			
+			////////////////////////run program on click////////////////////////////////////
+
+				$(".art-center").click(function(){
+					//create opacity div
+					$('body').append('<div id="disableddiv" class="disableddiv">&nbsp;</div>');
+					$("#programs").show();
+					
+					
+					$(".progplace").hide();
+					switch (this.id){
+						case "chesslnk": 
+							$("#chessboard").show().Chess();
+							break;
+						case "linkslnk":
+							$("#showLinks").show().LinksPl();
+							break;
+						case "barlnk":
+							$("#showCharts").show().BarChart();
+							break;
+						case "pielnk":
+							$("#showCharts").show().PieChart();
+							break;
+						case "kendolnk":
+							$("#youtubes-container").show().KendoYT();
+							break;	
+						case "emberlnk":
+							$("#ember-youtubes-container").show().EmberYT();
+							break;												
+					} 
+					
+					$("#closewrapper").click(function(){
+						$("#programs").hide();
+						$('#disableddiv').remove();
+					});
+				});
+				
+			})();
+
+
+		</script>
+		
+
+	</body>
+</html>
